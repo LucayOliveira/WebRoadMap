@@ -17,4 +17,4 @@ def carrinho(request):
   return render(request,  'carrinho.html')
 
 def checkout(request):
-  return render(request,  'checout.html')
+  return render(request,  'checkout.html')
