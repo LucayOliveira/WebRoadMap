@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
   </head>
   <body>
-    <nav>Barra de Navegação</nav>
+    {% include nav.html %}
+    <!-- ?? -->
     {% block body %}
     <!-- ?? -->
     {% endblock %}
