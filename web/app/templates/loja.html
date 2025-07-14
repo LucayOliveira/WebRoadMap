@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
 <!-- ?? -->
+{% load static %}
+<!-- ?? -->
+
 {% block body %}
+
+<!-- ?? -->
+{% for produto in produtos %}
+<p>Produto: {{produto.nome}}</p>
+<p>preço: {{produto.preco}}</p>
+<p>imagem: {{produto.imagem}}</p>
+{% endfor %}
+
 <h3>Loja</h3>
 {% endblock %}

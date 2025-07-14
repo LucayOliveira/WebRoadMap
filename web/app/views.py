@@ -1,11 +1,14 @@
 from django.shortcuts import render
+from .models import *
 
 # Create your views here.
 def homepage(request):
   return render(request,  'index.html')
 
 def loja(request):
-  return render(request,  'loja.html')
+  produtos = Produto.objects.all()
+  context = {'produtos' : produtos}
+  return render(request,  'loja.html', context)
 
 def minhaconta(request):
   return render(request,  'minhaconta.html')
